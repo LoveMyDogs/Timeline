@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://lovemydogs.github.io/Timeline/sitemap.xml
