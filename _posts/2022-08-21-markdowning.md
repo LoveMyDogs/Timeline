@@ -8,10 +8,12 @@ Or, instead just type it out in one line like a normal person[^1]. **Bold** a wo
 
 ## Let's try out other things
 `lets be codey  `
+
 *or a bit to the side*
+
 **really thick now**
 
->Quoting out my life
+>"Quoting out my life"
 
 | Foods I Like | Foods I Dislike |
 |-|-|
@@ -22,4 +24,4 @@ Or, instead just type it out in one line like a normal person[^1]. **Bold** a wo
 
 
 
-[^1] Making a footnote 'cause I can, mimicking things
+[^1]: Making a footnote 'cause I can, mimicking things
