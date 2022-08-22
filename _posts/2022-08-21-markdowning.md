@@ -27,7 +27,7 @@ Or, instead just type it out in one line like a normal person[^1]. **Bold** a wo
 |-|-|
 | Apples | Avocados |
 | Broccoli | Tomatoes |
-| Meat | |I dunno|
+| Meat | I dunno|
 
 
 
