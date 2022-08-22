@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Doing My Best",
-            "content": "print(&quot;My dogs are really cute and lovable&quot;) . My dogs are really cute and lovable . Reasons . They are all very small and cuddly | They love me a lot and therefore I love them | When they run around they are adorable | . Comparison . Although other dogs may be more well behaved and less spoiled, it is my own fault that they are spoiled children and as such I&#39;ll spoil them more. Each dog is cutest to their owner. . print(&quot;hello&quot;) . hello .",
+            "content": "print(&quot;My dogs are really cute and lovable&quot;) . My dogs are really cute and lovable . Reasons . They are all very small and cuddly | They love me a lot and therefore I love them | When they run around they are adorable | . Comparison . Although other dogs may be more well behaved and less spoiled, it is my own fault that they are spoiled children and as such I&#39;ll spoil them more. Each dog is cutest to their owner. . . print(&quot;hello&quot;) . hello .",
             "url": "https://lovemydogs.github.io/Timeline/2022/08/22/Making-A-New-One.html",
             "relUrl": "/2022/08/22/Making-A-New-One.html",
             "date": " • Aug 22, 2022"
