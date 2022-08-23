@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Doing My Best",
-            "content": "My dogs are really cute and lovable . Reasons . They are all very small and cuddly | They love me a lot and therefore I love them | When they run around they are adorable | . Comparison . Although other dogs may be more well behaved and less spoiled, it is my own fault that they are spoiled children and as such I&#39;ll spoil them more. Each dog is cutest to their owner. . hello 4 8 12 16 .",
+            "content": "My dogs are really cute and lovable . Reasons . They are all very small and cuddly | They love me a lot and therefore I love them | When they run around they are adorable | . Comparison . Although other dogs may be more well behaved and less spoiled, it is my own fault that they are spoiled children and as such I&#39;ll spoil them more. Each dog is cutest to their owner. . hello 4 8 12 16 . msg = input(&quot;Enter a greeting: &quot;) print(msg) .",
             "url": "https://lovemydogs.github.io/Timeline/jupyter/2022/08/22/Making-A-New-One.html",
             "relUrl": "/jupyter/2022/08/22/Making-A-New-One.html",
             "date": " • Aug 22, 2022"
