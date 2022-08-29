@@ -29,6 +29,8 @@ Or, instead just type it out in one line like a normal person[^1]. **Bold** a wo
 | Broccoli | Tomatoes |
 | Meat | I dunno|
 
+![]({{ site.baseurl }}/images/baby_penguin.jpen "I like penguins")
+
 
 
 
