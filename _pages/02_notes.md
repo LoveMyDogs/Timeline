@@ -10,7 +10,10 @@ toc: true
 > Bash use in terminal automization and making easy to check requirements for a computer
 > The use of images and the key/subject that is necessary for code to work
 > New possibilities in markdown and html
+> 
 
 # Vocab
-
+> key
+> variables
+> values
 
