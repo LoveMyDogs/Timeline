@@ -6,8 +6,10 @@ categories: [markdown]
 title: Markdowning It Up
 ---
 
-# Lets do this 
+# Lets do this
+
 Markdown Time
+
 - Let's try out lists
 - And their possibilities
 - Such as separated things that could be one line
@@ -15,7 +17,8 @@ Markdown Time
 Or, instead just type it out in one line like a normal person[^1]. **Bold** a word, and we're displaying our skills. Very minute skills.
 
 ## Let's try out other things
-`lets be codey  `
+
+`lets be codey`
 
 *or a bit to the side*
 
