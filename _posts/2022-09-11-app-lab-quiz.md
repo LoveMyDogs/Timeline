@@ -1,6 +1,7 @@
 ---
 - title: Derivatives Quiz
 - toc: true
+- layout: post
 - categories: [applab]
 ---
 
