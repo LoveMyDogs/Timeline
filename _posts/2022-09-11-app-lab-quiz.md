@@ -2,8 +2,6 @@
 - title: Derivatives Quiz
 - toc: true
 - categories: [applab]
-- categories: [collegeboard]
-- tags: [applab]
 ---
 
 # Derivatives Quiz: Process
