@@ -1,8 +1,8 @@
 ---
-- title: Derivatives Quiz
-- toc: true
-- layout: post
-- categories: [applab]
+title: Derivatives Quiz
+toc: true
+layout: post
+categories: [applab]
 ---
 
 # Derivatives Quiz: Process
