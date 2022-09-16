@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://lovemydogs.github.io/Timeline/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://lovemydogs.github.io/Timeline/2020/02/20/test-jvsc-604994ee-30c1-4d57-a373-2fb7f6918439e62a0298-6972-42ab-b9d8-c8ccf4531f32.html</loc>
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
@@ -37,16 +33,16 @@
 <lastmod>2022-09-05T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://lovemydogs.github.io/Timeline/2022/09/11/The-Arguments-That-Surround-You.html</loc>
-<lastmod>2022-09-11T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://lovemydogs.github.io/Timeline/applab/2022/09/11/app-lab-quiz.html</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://lovemydogs.github.io/Timeline/scrumboard/2022/09/11/please-begging.html</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://lovemydogs.github.io/Timeline/2022/09/15/The-Arguments-That-Surround-You.html</loc>
+<lastmod>2022-09-15T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://lovemydogs.github.io/Timeline/about/</loc>
