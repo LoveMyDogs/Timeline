@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Fri Sep 16 11:22:30 2022
+
+# Make data base, printed on Tue Sep 20 03:43:29 2022
 
 # Variables
 
@@ -52,7 +55,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 UUID = b9fea113-3d6f-4414-af45-9078aa2a30a6
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.vLlKELVQir/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.aMWYNxplt0/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -162,7 +165,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/gianninaortegarico/opt/anaconda3
 # environment
-VSCODE_PID = 7545
+VSCODE_PID = 2262
 # environment
 _CE_CONDA = 
 # environment
@@ -176,7 +179,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777231, inode 106503543): 40 files, no impossibilities.
+# . (device 16777233, inode 106503543): 40 files, no impossibilities.
 
 # 40 files, no impossibilities in 1 directories.
 
@@ -308,9 +311,6 @@ convert: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
-make: *** No rule to make target `all'.  Stop.
-
 #  commands to execute (from `Makefile', line 29):
 	docker-compose up converter
 	
@@ -323,6 +323,7 @@ make: *** No rule to make target `all'.  Stop.
 	chmod -R u+rw .
 	
 
+ 
 # files hash-table stats:
 # Load=16/1024=2%, Rehash=0, Collisions=0/38=0%
 # VPATH Search Paths
@@ -336,6 +337,6 @@ make: *** No rule to make target `all'.  Stop.
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Sep 16 11:22:31 2022
+# Finished Make data base on Tue Sep 20 03:43:29 2022
 
  
