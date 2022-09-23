@@ -23,3 +23,10 @@ I've always been an introvert, but I think I'll try to attempt to talk to more p
 ## The Present Moment
 
 I'll be trying to focus more on the present then the future. Even if an event that is fairly negative is happening in the moment, I'll try to do actions to minimize that instead of trying to avoid it by thinking of my potential future happiness. Instead of escaping, from now on I'll build every single moment to the best it can be.
+
+### Gratitude List
+
+- My Dogs
+- My Mom
+- My Hobbies
+- My Teachers
