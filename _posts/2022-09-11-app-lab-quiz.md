@@ -60,3 +60,7 @@ My main challenge was in attempting to automate the question format. However, af
 ## Different Concept
 
 I did not have the time to implement this, however making a mini game wherein it is a choose your own adventure would be plausible, maybe making a timeline using the canvas function. with the use of variables and "onEvent" many things can be created, as well as there conveniently being different screens.
+
+
+#### To add new window to glask
+Change it on navbar and define it on main.py
