@@ -2,7 +2,7 @@
 title: Groupwork
 toc: true
 layout: post
-categories: [applab]
+categories: [group]
 image: /images/groupwork_icon.jpeg
 ---
 
