@@ -1,5 +1,5 @@
 ---
-title: Derivatives Quiz
+title: Groupwork
 toc: true
 layout: post
 categories: [applab]
