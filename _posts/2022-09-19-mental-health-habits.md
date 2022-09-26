@@ -28,6 +28,8 @@ I'll be trying to focus more on the present then the future. Even if an event th
 
 I'm really extremely grateful to my mom for providing for me and taking care of me every day, and I am also grateful for a friend I have on campus that commiserates with me on school work and helps me when I'm confused with anything
 
+## Collaboration with my Teammates
+![]({{ site.baseurl }}/images/teammate_collaboration.png "collaboration")
 
 ### Gratitude List
 
@@ -35,3 +37,4 @@ I'm really extremely grateful to my mom for providing for me and taking care of 
 - My Mom
 - My Hobbies
 - My Teachers
+
