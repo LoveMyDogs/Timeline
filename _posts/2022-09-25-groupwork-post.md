@@ -3,6 +3,7 @@ title: Derivatives Quiz
 toc: true
 layout: post
 categories: [applab]
+image: /images/groupwork_icon.jpeg
 ---
 
 # Scrum Team Roles and Project
