@@ -24,3 +24,5 @@ Our project is a website largely focused on helping students with school activit
 
 ## Sprint
 First we will set up our website for the first two or so days, allowing Ellie to set up the CSS and other base background stuff. This will take us around 3 days through our usual schedule. Afterwards we will work on our volleyball section, probably taking the rest of our 7 days, first laying out the text of volleyball terms and strategies, and then adding in the visual element. If we finish early on this, we will start on the math section's definition and terms section.
+
+![]({{ site.baseurl }}/images/scrum_image_plan.png "collaboration")
