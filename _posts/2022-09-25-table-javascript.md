@@ -12,6 +12,23 @@
         <main class="page-content" aria-label="Content">
         <div class="wrapper">
             "content"
+            <table>
+                 <tr>
+                     <th>Week</th>
+                     <th>Things Done</th>
+                     <th>Place</th>
+                </tr>
+                 <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>School</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>School</td>
+                </tr>
+            </table>
         </div>
         </main>
 
