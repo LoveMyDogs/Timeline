@@ -1,3 +1,10 @@
+---
+title: Post with Table
+toc: true
+layout: post
+categories: [javascript]
+image: /images/groupwork_icon.jpeg
+---
 
 ```html
     <!DOCTYPE html>
