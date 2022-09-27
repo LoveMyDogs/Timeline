@@ -1,9 +1,10 @@
 ---
 title: Post with Table
 toc: true
-layout: post
+layout: notebook
 categories: [javascript]
 image: /images/groupwork_icon.jpeg
+nb_path: _notebooks/2022-09-25-javascript-table.ipynb
 ---
 
 ```html
