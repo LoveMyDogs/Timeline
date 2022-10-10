@@ -1,5 +1,5 @@
 ---
-title: Program Design
+title: Program Purpose and Design
 toc: true
 layout: post
 categories: [group]
