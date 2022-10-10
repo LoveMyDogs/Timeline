@@ -646,11 +646,18 @@ Rank Url: https://coinranking.com/coin/iAzbfXiBBKkR6+eos-eos
 
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-<span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-	<span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># data = response.json().get('body')  # turn response to json() so we can extract "world_total"</span>
+<span class="n">setup</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'setup'</span><span class="p">)</span>
+<span class="n">punchline</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'punchline'</span><span class="p">)</span>
+<span class="c1"># while x &lt;= 10:</span>
+<span class="c1"># 	print(setup,punchline)</span>
+<span class="c1"># 	x = x + 1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">setup</span><span class="p">,</span><span class="n">punchline</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -663,9 +670,8 @@ Rank Url: https://coinranking.com/coin/iAzbfXiBBKkR6+eos-eos
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{"success":true,"body":[{"_id":"60dd35c12413443a5a5f6e21","setup":"What do you call a cow with no legs?","punchline":"Ground beefWhere do you find a cow with no legs?Right where you left itWhat do you call a cow with three legs? Lean beefWhat do you call a cow with one leg? StakeWhat do you call a cow with two legs? Your mom!","type":"call","likes":[],"author":{"name":"unknown","id":null},"approved":true,"date":1618108661,"NSFW":false,"shareableLink":"https://dadjokes.io/joke/60dd35c12413443a5a5f6e21"}]}
-success True
-body [{'_id': '60dd35c12413443a5a5f6e21', 'setup': 'What do you call a cow with no legs?', 'punchline': 'Ground beefWhere do you find a cow with no legs?Right where you left itWhat do you call a cow with three legs? Lean beefWhat do you call a cow with one leg? StakeWhat do you call a cow with two legs? Your mom!', 'type': 'call', 'likes': [], 'author': {'name': 'unknown', 'id': None}, 'approved': True, 'date': 1618108661, 'NSFW': False, 'shareableLink': 'https://dadjokes.io/joke/60dd35c12413443a5a5f6e21'}]
+<pre>{"success":true,"body":[{"_id":"60dd3731617e52080f3cb27d","setup":"What happens when you are hugging Dwayne Johnson and a pig?","punchline":"You’re stuck between The Rock and a lard place.","type":"pig","likes":[],"author":{"name":"unknown","id":null},"approved":true,"date":1618108661,"NSFW":false,"shareableLink":"https://dadjokes.io/joke/60dd3731617e52080f3cb27d"}]}
+None None
 </pre>
 </div>
 </div>
