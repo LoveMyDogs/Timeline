@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -616,6 +616,56 @@ EOS 1.1711233536912673
 Icon Url: https://cdn.coinranking.com/PqOYrWSje/eos2.svg
 Rank Url: https://coinranking.com/coin/iAzbfXiBBKkR6+eos-eos
 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://dad-jokes.p.rapidapi.com/random/joke"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"3caeff5409mshc2c175f29a5e775p13d7f9jsne72bfb6ce7e5"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"dad-jokes.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"success":true,"body":[{"_id":"60dd35c12413443a5a5f6e21","setup":"What do you call a cow with no legs?","punchline":"Ground beefWhere do you find a cow with no legs?Right where you left itWhat do you call a cow with three legs? Lean beefWhat do you call a cow with one leg? StakeWhat do you call a cow with two legs? Your mom!","type":"call","likes":[],"author":{"name":"unknown","id":null},"approved":true,"date":1618108661,"NSFW":false,"shareableLink":"https://dadjokes.io/joke/60dd35c12413443a5a5f6e21"}]}
+success True
+body [{'_id': '60dd35c12413443a5a5f6e21', 'setup': 'What do you call a cow with no legs?', 'punchline': 'Ground beefWhere do you find a cow with no legs?Right where you left itWhat do you call a cow with three legs? Lean beefWhat do you call a cow with one leg? StakeWhat do you call a cow with two legs? Your mom!', 'type': 'call', 'likes': [], 'author': {'name': 'unknown', 'id': None}, 'approved': True, 'date': 1618108661, 'NSFW': False, 'shareableLink': 'https://dadjokes.io/joke/60dd35c12413443a5a5f6e21'}]
 </pre>
 </div>
 </div>
