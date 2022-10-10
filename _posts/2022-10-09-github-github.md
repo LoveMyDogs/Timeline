@@ -1,5 +1,5 @@
 ---
-title: Groupwork
+title: Program Design
 toc: true
 layout: post
 categories: [group]
