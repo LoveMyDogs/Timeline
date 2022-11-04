@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -642,22 +642,30 @@ Rank Url: https://coinranking.com/coin/iAzbfXiBBKkR6+eos-eos
 	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"dad-jokes.p.rapidapi.com"</span>
 <span class="p">}</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-
 <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 
+<span class="c1">#while x &lt;= 4:</span>
+<span class="c1">#	response = requests.request("GET", url, headers=headers)</span>
+<span class="c1">#	print(response.text)</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 
 
-<span class="c1"># data = response.json().get('body')  # turn response to json() so we can extract "world_total"</span>
+<span class="c1">#print('A few dad jokes for your consideration')</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>  <span class="c1"># turn response to json() so we can extract "body"</span>
 <span class="n">setup</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'setup'</span><span class="p">)</span>
-<span class="n">punchline</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'punchline'</span><span class="p">)</span>
+<span class="c1">#punchline = response.json().get('punchline')</span>
 <span class="c1"># while x &lt;= 10:</span>
 <span class="c1"># 	print(setup,punchline)</span>
 <span class="c1"># 	x = x + 1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">setup</span><span class="p">,</span><span class="n">punchline</span><span class="p">)</span>
+<span class="c1">#print(setup,punchline)</span>
+
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>
+		<span class="n">json_formatted_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span> <span class="p">[</span><span class="s2">"data"</span><span class="p">],</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+		<span class="nb">print</span> <span class="p">(</span><span class="n">json_formatted_str</span><span class="p">)</span>
+		<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
 </pre></div>
 
     </div>
@@ -670,9 +678,98 @@ Rank Url: https://coinranking.com/coin/iAzbfXiBBKkR6+eos-eos
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{"success":true,"body":[{"_id":"60dd3731617e52080f3cb27d","setup":"What happens when you are hugging Dwayne Johnson and a pig?","punchline":"You’re stuck between The Rock and a lard place.","type":"pig","likes":[],"author":{"name":"unknown","id":null},"approved":true,"date":1618108661,"NSFW":false,"shareableLink":"https://dadjokes.io/joke/60dd3731617e52080f3cb27d"}]}
-None None
+<pre>{"success":true,"body":[{"_id":"60dd3705e947792acd62ea0b","setup":"Anyone know the score in the Nigeria Ethiopia footy match?","punchline":"Nigeria 8 - Ethiopia Didn't","type":"nigeria","likes":[],"author":{"name":"unknown","id":null},"approved":true,"date":1618108661,"NSFW":false,"shareableLink":"https://dadjokes.io/joke/60dd3705e947792acd62ea0b"}]}
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 10</span> in <span class="ansi-cyan-fg">&lt;cell line: 30&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span> #punchline = response.json().get('punchline')
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=23'&gt;24&lt;/a&gt;</span> # while x &lt;= 10:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=24'&gt;25&lt;/a&gt;</span> # 	print(setup,punchline)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span> # 	x = x + 1
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=26'&gt;27&lt;/a&gt;</span> 
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=27'&gt;28&lt;/a&gt;</span> #print(setup,punchline)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=29'&gt;30&lt;/a&gt;</span> while x &lt;= 2:
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=30'&gt;31&lt;/a&gt;</span> 		json_formatted_str = json.dumps(data ["data"], indent=4)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=31'&gt;32&lt;/a&gt;</span> 		print (json_formatted_str)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X11sZmlsZQ%3D%3D?line=32'&gt;33&lt;/a&gt;</span> 		x = x+1
+
+<span class="ansi-red-fg">NameError</span>: name 'json' is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://cooking-recipe2.p.rapidapi.com/getbycat/Indian%20Desserts"</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"3caeff5409mshc2c175f29a5e775p13d7f9jsne72bfb6ce7e5"</span><span class="p">,</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"cooking-recipe2.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="c1">#print(response.text)</span>
+
+<span class="n">x</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"URLS to Recipes"</span><span class="p">)</span>
+<span class="n">recipe</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'title'</span><span class="p">)</span>
+<span class="n">url</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'url'</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+		<span class="n">json_formatted_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">recipe</span> <span class="p">[</span><span class="s2">"recipe"</span><span class="p">],</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+		<span class="nb">print</span> <span class="p">(</span><span class="n">json_formatted_str</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>URLS to Recipes
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 17&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X20sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> x=1
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X20sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> print("URLS to Recipes")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X20sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> recipe = response.json().get('title')
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X20sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span> url = response.json().get('url')
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/gianninaortegarico/vscode/Timeline/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X20sZmlsZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span> while x &lt;= 3:
+
+<span class="ansi-red-fg">AttributeError</span>: 'list' object has no attribute 'get'</pre>
 </div>
 </div>
 
