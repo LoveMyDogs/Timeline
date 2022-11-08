@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Fri Nov  4 11:56:12 2022
+
+# Make data base, printed on Tue Nov  8 10:33:55 2022
 
 # Variables
 
@@ -44,7 +47,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.M8RBCml5dW/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Fj54TdCaUd/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -148,9 +151,10 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/gianninaortegarico/opt/anaconda3
 # environment
-VSCODE_PID = 65503
+VSCODE_PID = 32504
 # environment
 _CE_CONDA = 
+ 
 # environment
 LANG = C
 # variable set hash-table stats:
@@ -162,7 +166,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777230, inode 106503543): 39 files, no impossibilities.
+# . (device 16777231, inode 106503543): 39 files, no impossibilities.
 
 # 39 files, no impossibilities in 1 directories.
 
@@ -310,9 +314,6 @@ convert: .FORCE
 # Load=16/1024=2%, Rehash=0, Collisions=0/38=0%
 # VPATH Search Paths
 
- 
-make: *** No rule to make target `all'.  Stop.
-
 # No `vpath' search paths.
 
 # No general (`VPATH' variable) search path.
@@ -322,6 +323,6 @@ make: *** No rule to make target `all'.  Stop.
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Nov  4 11:56:13 2022
+# Finished Make data base on Tue Nov  8 10:33:55 2022
 
  
