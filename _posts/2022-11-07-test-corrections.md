@@ -23,3 +23,7 @@ On this question I just saw C and instead of reading through each answer I just 
 ![]({{ site.baseurl }}/images/question_2_final.png "The 2nd Question I got Wrong")
 
 For this one I put myself into a circle of confusion, telling myself if there would be any output at all, which there is. The correct answer is c, because when x is negative is when y is there. yeah.
+
+# Review
+
+Thankfully I already knew a lot of these concepts and could use deductive reasoning for those I was hesitant about, I did have to look up some concepts but it ended up well.
