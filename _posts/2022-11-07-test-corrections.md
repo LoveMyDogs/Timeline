@@ -26,4 +26,4 @@ For this one I put myself into a circle of confusion, telling myself if there wo
 
 # Review
 
-Thankfully I already knew a lot of these concepts and could use deductive reasoning for those I was hesitant about, I did have to look up some concepts but it ended up well.
+Thankfully I already knew a lot of these concepts and could use deductive reasoning for those I was hesitant about, I did have to look up some concepts but it ended up well. I struggled with booleans, some list stuff before I understood, I pretty much knew functions and working with other people. 
