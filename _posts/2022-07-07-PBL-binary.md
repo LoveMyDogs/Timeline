@@ -1,8 +1,7 @@
 ---
 title: Binary Math
 layout: default
-description: A Binary Math illustrative application using HTML, Li
-quid, and JavaScriptmake .
+description: A Binary Math illustrative application using HTML, Liquid, and JavaScriptmake .
 permalink: /frontend/binary
 image: /images/binary.png
 categories: [3.B, 3.C, C4.4]
