@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Quiz Questions | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Quiz Questions" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Our Frontend talking to Backend Python application serving questions. This api allows us to get customer responses." />
+<meta property="og:description" content="Our Frontend talking to Backend Python application serving questions. This api allows us to get customer responses." />
+<link rel="canonical" href="https://lovemydogs.github.io/Timeline/data/quiz" />
+<meta property="og:url" content="https://lovemydogs.github.io/Timeline/data/quiz" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:image" content="https://lovemydogs.github.io/Timeline/images/feedback.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://lovemydogs.github.io/Timeline/images/feedback.jpeg" />
+<meta property="twitter:title" content="Quiz Questions" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-30T00:00:00-05:00","datePublished":"2022-10-30T00:00:00-05:00","description":"Our Frontend talking to Backend Python application serving questions. This api allows us to get customer responses.","headline":"Quiz Questions","image":"https://lovemydogs.github.io/Timeline/images/feedback.jpeg","mainEntityOfPage":{"@type":"WebPage","@id":"https://lovemydogs.github.io/Timeline/data/quiz"},"url":"https://lovemydogs.github.io/Timeline/data/quiz"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Timeline/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lovemydogs.github.io/Timeline/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/Timeline/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Timeline/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Timeline/about/">About Me</a><a class="page-link" href="/Timeline/notes/">Notes</a><a class="page-link" href="/Timeline/search/">Search</a><a class="page-link" href="/Timeline/javascript/">Javascript</a><a class="page-link" href="/Timeline/categories/">Tags</a><a class="page-link" href="/Timeline/_pages/notes.html">Notes for APCSP</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!-- TODO: add this link to each quiz type href (see continueButton): quiz?subject=APStats&totalQs=5 !-->
+<!-- HTML  fragment for page -->
+<div id="quiz_result">
+    <!-- javascript generated data --> 
+</div>
+
+<!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
+<script>
+
+  const queryString = window.location.search;
+  console.log(queryString);
+  const urlParams = new URLSearchParams(queryString);
+  const subj = urlParams.get('subject');
+  const totalQs = urlParams.get('totalQs');
+
+  // prepare HTML defined "result" container for new output
+  const resultContainer = document.getElementById("quiz_result");
+
+  // prepare fetch urls
+  const url = "https://www.teamcheeseatimetime.tk/api/quiz";
+  const urllocal = "http://localhost:5000/api/quiz" ;
+  
+  const fetchQuizUrl = `/${subj}/${totalQs}`;
+  // prepare fetch GET options
+  const options = {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'omit', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  };
+ 
+  currentPageIndex = 0;
+  questionIdList = [];
+  choiceMap = {};
+  selectedAnswer = null;
+  myAnswerResponse = {};
+
+  // fetch the API
+  fetch(url + fetchQuizUrl, options)
+    // response is a RESTful "promise" on any successful fetch
+    .then(response => {
+      // check for response errors
+      if (response.status !== 200) {
+          error('GET API response failure: ' + response.status);
+          return;
+      }
+      // valid response will have JSON data
+      response.json().then(data => {
+           
+          onQuizResult(data);
+      })
+  })
+  // catch fetch errors (ie Nginx ACCESS to server blocked)
+  .catch(err => {
+    error(err + " " + url);
+  });
+
+  // Reaction function to likes or jeers user actions
+  function onCheckAnswer(questId, answer) {
+
+    // const event.target.parentElement.id;
+    var requestData = {
+      question: questId,
+      answer: selectedAnswer
+    };
+    const post_options = { 
+      ...options, 
+      method: 'POST',
+      body: JSON.stringify(requestData) 
+    }; // clones and replaces method
+
+    post_url = '/checkanswer';
+    // fetch the API
+    fetch(url + post_url, post_options)
+    // response is a RESTful "promise" on any successful fetch
+    .then(response => {
+      // check for response errors
+      if (response.status !== 200) {
+          error("PUT API response failure: " + response.status)
+          return;  // api failure
+      }
+      // valid response will have JSON data
+      response.json().then(data => {
+           
+          myAnswerResponse = data;
+          var msg1 = document.getElementById(questId + 'sol-1');
+          const score = data['scoreForThisAnswer']
+          if (score > 0) {
+            msg1.innerHTML = 'Correct!';
+          }
+          else {
+            msg1.innerHTML = 'Incorrect!';
+          }
+
+          var msg2 = document.getElementById(questId + 'sol-2');
+          msg2.innerHTML =  `Your score is ${score}`;
+
+          var msg3 = document.getElementById(questId + 'sol-3');
+          msg3.innerHTML =  data['solution'];
+          
+      })
+    })
+    // catch fetch errors (ie Nginx ACCESS to server blocked)
+    .catch(err => {
+      error(err + " " + post_url);
+    });
+    
+  }
+
+  // Create a page for each question. Set first page to shown and subsequent page to 
+  // hidden so will be shown when continue button is pressed by the user
+  function onQuizResult(questions) {
+    index = 0;
+    for (const question of questions) {
+    
+      // make "tr element" for each "row of data"
+      const questionDiv = document.createElement("div");
+      questionDiv.id = question.id;
+     
+      questionIdList.push(questionDiv.id);
+      if (index > 0) {
+        // Set the first page to shown and rest is not till continue
+        // button is pressed
+        questionDiv.setAttribute('hidden', true);
+      }
+      index++;
+      var qtitle = document.createElement('div');
+      if (question.isImage) {
+        var img = document.createElement('img');
+        img.src = question.image;
+        qtitle.appendChild(img);
+      }
+      else {
+        qtitle.setAttribute(
+          'style',
+          'color: blue;',
+        );
+        qtitle.innerHTML = question.question;
+      } 
+      var hl = document.createElement("hr");
+      hl.setAttribute("style", "color:red");
+      questionDiv.setAttribute("style", "margin-bottom:20px;");
+      questionDiv.appendChild(qtitle);
+      questionDiv.appendChild(hl);
+     
+      const choices = create_choices(question);
+      const buttons = create_buttons(question);
+      const solution = create_solution(question);
+      questionDiv.appendChild(choices);
+      questionDiv.appendChild(buttons);
+      questionDiv.appendChild(solution);
+      
+      resultContainer.appendChild(questionDiv);
+      
+    } // end of questions
+  }
+  function create_choices(question)  {
+      
+      // loop through choices to make MCs
+      const choicesDiv = document.createElement("div");
+      choicesDiv.id= question.id + "choices";
+      idx = 0;
+      for (const questionChoice of question.choices) {
+        idx++;
+        var radioDiv = document.createElement("div");
+        
+        var radioButton = document.createElement("INPUT");
+        radioButton.setAttribute("type", "radio");
+        radioButton.setAttribute('name', question.id + "choices");
+        radioButton.id = question.id + '-radio-'+ idx;
+
+        var labelValue = document.createElement('label');
+        labelValue.id = question.id + '-radiolabel-' + idx;
+        labelValue.innerHTML = questionChoice;
+        labelValue.setAttribute('style', 'margin-left:5px');
+
+        choiceMap[radioButton.id] = questionChoice;
+        radioDiv.appendChild(radioButton);
+        radioDiv.appendChild(labelValue);
+        choicesDiv.appendChild(radioDiv);
+        
+        radioButton.addEventListener("click", function() {
+          if (this.checked) {
+            selectedAnswer = choiceMap[this.id];
+            document.getElementById(question.id + "continueButton").disabled = false;
+          }  
+        });
+        
+      };
+      return choicesDiv;
+  }
+  function create_buttons(question) {
+
+    const questionCheckDiv = document.createElement("div");
+    questionCheckDiv.id= question.id + "answer";
+    questionCheckDiv.setAttribute(
+      'style',
+      'margin-top:20px;margin-bottom:20px;',
+    );
+   
+    const checkButton = document.createElement('button');
+    checkButton.id = question.id + "checkAnswer";
+    checkButton.innerHTML = "Check Answer";
+    checkButton.setAttribute(
+      'style',
+      'color: blue; width: 120px; height: 30px; ',
+    );
+    checkButton.onclick = function () {
+      // TODO: Call checkanswer rest API ; if score = 0 (result from the API), display incorrect; else display correc
+      // how to get question and answer from user to this function
+      const questId = questionIdList[currentPageIndex];
+      if (selectedAnswer === null) {
+        alert('Please select one of the answers shown');
+        return;
+      } 
+      onCheckAnswer(questId, selectedAnswer);     
+    };
+    questionCheckDiv.appendChild(checkButton);  // add "yes button" to yes cell
+
+    const continueButton = document.createElement('button');
+    continueButton.id = question.id + "continueButton";
+    continueButton.innerHTML = "Continue";
+    continueButton.disabled = true;
+    continueButton.setAttribute(
+      'style',
+      'color: blue; width: 120px; height: 30px;margin-left:10px;',
+    );
+
+    continueButton.onclick = function () { 
+      const currentPageId = questionIdList[currentPageIndex];
+      
+      var cur = document.getElementById(currentPageId);
+      cur.style.display = 'none';     
+      const nextIdx = ++currentPageIndex;
+      if (nextIdx >= questionIdList.length ) {        
+        console.log('done with all questions');
+        location.href = "quizfinish";
+        return;
+      }
+      const nextPageId = questionIdList[nextIdx];
+      console.log('next page ', nextPageId);
+      var next = document.getElementById(nextPageId);
+      next.removeAttribute('hidden');
+      next.style.display = 'block';
+      // Check answer again if it's different when user 
+      // clicks check answer
+      if (myAnswerResponse['yourAnswer'] != selectedAnswer) {
+        onCheckAnswer(currentPageId, selectedAnswer);  
+      }
+      selectedAnswer = null;
+    };
+    questionCheckDiv.appendChild(continueButton); 
+    return (questionCheckDiv);
+
+  }
+
+  function create_solution(question) {
+
+    var sol = document.createElement('div');
+    var title = document.createElement('span');
+    title.innerHTML = 'Answer and Solution';
+    title.setAttribute('style', 'font-weight:bold; font-size: 15px;');
+    sol.appendChild(title);
+   
+    var msg1 = document.createElement('div');
+    msg1.id = question.id + 'sol-1';
+    sol.appendChild(msg1);
+
+    var msg2 = document.createElement('div');
+    msg2.id = question.id  + 'sol-2';
+    sol.appendChild(msg2);
+
+    var msg3 = document.createElement('div');
+    msg3.id = question.id  + 'sol-3';
+    msg3.setAttribute('style', 'margin-top:10px;');
+    sol.appendChild(msg3);
+
+    sol.setAttribute('style', 'padding:10px; border: 1px solid #969696;');
+
+    return sol;
+  }
+  // Something went wrong with actions or responses
+  function error(err) {
+    // log as Error in console
+    console.error(err);
+    // append error to resultContainer
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    td.innerHTML = err;
+    tr.appendChild(td);
+    resultContainer.appendChild(tr);
+  }
+
+</script>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Timeline/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Timeline/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Timeline/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
