@@ -7,8 +7,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
  
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Fri Nov 18 08:34:15 2022
+
+# Make data base, printed on Fri Nov 18 11:26:02 2022
 
 # Variables
 
@@ -74,6 +76,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+ 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -149,7 +152,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/gianninaortegarico/opt/anaconda3
 # environment
-VSCODE_PID = 54484
+VSCODE_PID = 63902
 # environment
 _CE_CONDA = 
 # environment
@@ -295,6 +298,7 @@ convert: .FORCE
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 29):
 	docker-compose up converter
 	
@@ -320,9 +324,6 @@ convert: .FORCE
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
- 
-make: *** No rule to make target `all'.  Stop.
-
-# Finished Make data base on Fri Nov 18 08:34:15 2022
+# Finished Make data base on Fri Nov 18 11:26:02 2022
 
  
