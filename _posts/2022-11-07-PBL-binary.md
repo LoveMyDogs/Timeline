@@ -1,7 +1,7 @@
 ---
 title: Binary Math
 layout: default
-description: A Binary Math illustrative application using HTML, Liquid, and JavaScriptmake .
+description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /frontend/binary
 image: /images/binary.png
 categories: [3.B, 3.C, C4.4]
@@ -14,6 +14,7 @@ type: pbl
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
+{% include nav_frontend.html %}
 {% assign BITS = 8 %}
 
 <div class="container bg-primary">
